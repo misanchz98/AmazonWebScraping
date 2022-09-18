@@ -15,11 +15,16 @@ NEWSPIDER_MODULE = 'amazon_scraper.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'amazon_scraper (+http://www.yourdomain.com)'
 #USER_AGENT = https://developers.whatismybrowser.com/useragents/explore/software_name/googlebot/
-#USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+USER_AGENT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
-PROXY_POOL_ENABLED = True
+
+# Desired file format
+FEED_FORMAT = "csv"
+ 
+# Name of the file where data extracted is stored
+FEED_URI = "items.csv"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -57,10 +62,10 @@ PROXY_POOL_ENABLED = True
 #}
 
 # scrapy-user-agents
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-}
+#DOWNLOADER_MIDDLEWARES = {
+#    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+#}
 
 
 # Enable or disable extensions

@@ -15,4 +15,3 @@ class AmazonScraperItem(scrapy.Item):
     RAM_type = scrapy.Field()
     graphic_card = scrapy.Field()
     memory_speed = scrapy.Field()
-    pass
