@@ -9,3 +9,17 @@ RAM_size,RAM_type,assessment,graphic_card,memory_speed,price,title
 2 GB,DDR3 SDRAM,"4,3 de 5 estrellas",PCI Express,1800 MHz,"81,22",Gigabyte GVN710D32L-00-G - Tarjeta gráfica
 2 GB,MicroDIMM,"4,3 de 5 estrellas",PCI-Express x16,5010 MHz,"101,23","Gigabyte GV-N710D5-2GL - Tarjeta gráfica (GeForce GT 710, 2 GB, GDDR5, 64 bit, 4096 x 2160 Pixeles, PCI Express x8 2.0)"
 2048 MB,DDR3 SDRAM,"4,3 de 5 estrellas",PCI Express,7010 MHz,"79,67",Palit NEAT7300HD46H - Tarjeta gráfica (PCI-E GT730 2048 MB Passive 64bit DDR3 DVI/HDMI/VGA)
+2 GB,L2 cache,"4,3 de 5 estrellas",PCI-Express x16,902 MHz,"81,38",MSI N730K-2GD3H/LPV1 NVIDIA GeForce GT 730 2 Go GDDR3
+2 GB,Memoria 72-Pin EDO SIMM,"4,3 de 5 estrellas",PCI Express,0 GHz,"87,89",Lenovo GEFORCE GT730 2GB Dual DP HP LPCTLR
+512,MicroDIMM,"4,3 de 5 estrellas",PCI-Express x16,1600 MHz,"77,40","Gigabyte GV-N710D3-2GL REV2.0 - Tarjeta gráfica NVIDIA GeForce GT 710 954 MHz, 2048 MB, PCI Express"
+2 GB,PC2-4200,"4,4 de 5 estrellas",PCI Express,732 MHz,"85,85","ASUS NVIDIA GeForce GT 730 - Tarjeta Gráfica (PCIe 2.0, 2GB DDR5, Perfil bajo, Diseño de Una Ranura, Auto-Extreme, GPU Tweak II)"
+2 GB,L2 cache,"4,3 de 5 estrellas","PCI Express, PCI-Express x8",1000 MHz,"68,99","MAXSUN NVIDIA GeForce GT 710 Tarjeta Grafica 2gb - Tarjeta gráfica (Pasivo, bajo Perfil, bajo Consumo, VGA, DVI-D, HDMI, HTPC, Sistema de refrigeración pasiva silenciosa sin Ventilador GDDR3)"
+2048,DDR3 SDRAM,"4,3 de 5 estrellas",PCI Express,1200 MHz,"81,18",Gigabyte GV-N730D3-2GI (Rev. 2.0) Tarjeta gráfica - GF GT 730 - 2 GB
+1 GB,DRAM,"4,3 de 5 estrellas",PCI-Express x4,0,"93,60","Lian-Li O11D-1X-4 - Cable para Tarjeta elevadora (PCIe 4.0), Color Negro"
+1 GB,DDR3 SDRAM,"4,4 de 5 estrellas",PCI Express,891 MHz,"248,56",PNY VCQK600-PB - Tarjeta gráfica de 1 GB
+2 GB,DDR3 SDRAM,"4,2 de 5 estrellas",PCI Express,4,"99,82",ZOTAC GeForce GT 730 Zone Edition - Tarjeta gráfica (2048 MB)
+1,DDR4 SDRAM,"4,2 de 5 estrellas",PCI-Express x16,1,"65,75",Lian Li O11DXL-1X no Compatible con RTX 3080/3090 y PCIE 4.0 Kit de Tarjetas de visualización Vertical (Soporte Vertical para Tarjetas gráficas para O11Dynamic XL) (O11DXL-1X)
+2 GB,DDR3 SDRAM,"4,2 de 5 estrellas",PCI Express,1200 MHz,-,"Asus R5230-SL-2GD3-L - Tarjeta gráfica de 2 GB DDR3 (AMD Radeon R5 230, PCI Express 2.1, 1200 MHz, HDMI)"
+2 GB,DDR5 SDRAM,"4,2 de 5 estrellas",PCI Express,5000 MHz,"99,47","Gigabyte Technology GV-N730D5-2GI REV2.0 NVIDIA GeForce GT 730 2GB - Tarjeta gráfica (Activo, ATX, NVIDIA, GeForce GT 730, GDDR5, PCI Express 2.0), negro"
+1 GB,L2 cache,"4,5 de 5 estrellas",PCI Express,800 MHz,-,"ASUS GT730-SL-1GD3-BRK GeForce GT 730 1GB GDDR3 - Tarjeta gráfica (GeForce GT 730, 1 GB, GDDR3, 64 bit, 2560 x 1600 Pixeles, PCI Express 2.0)"
+1 GB,PC2-4200,"4,5 de 5 estrellas",PCI,400 MHz,"498,00","PNY VCQ2000V2-T - Tarjeta gráfica de 1 GB (Quadro 2000, GDDR5, DVI-I, DisplayPort)"

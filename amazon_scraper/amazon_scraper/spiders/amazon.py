@@ -1,6 +1,8 @@
 import scrapy
 from ..items import AmazonScraperItem
 
+MAX_ITEMS = 10
+
 class AmazonSpider(scrapy.Spider):
     name = 'amazon'
     allowed_domains = ['amazon.es']
@@ -12,7 +14,7 @@ class AmazonSpider(scrapy.Spider):
         
         for i in all_div_products:
             
-            if count == 10:
+            if count == MAX_ITEMS:
                 break
             
             else:
