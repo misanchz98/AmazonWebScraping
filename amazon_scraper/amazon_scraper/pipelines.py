@@ -10,6 +10,10 @@ from itemadapter import ItemAdapter
 
 class AmazonScraperPipeline:
     def process_item(self, item, spider):
+
+        if not item['price']:
+            item['price'] = ['-']
+
         print("Title: ", item['title'])
         print("Assessment: ", item['assessment'])
         print("Price: ", item['price'])
