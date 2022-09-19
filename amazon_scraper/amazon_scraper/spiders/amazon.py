@@ -8,10 +8,9 @@ class AmazonSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        all_div_products = response.xpath('//div[@class="s-main-slot s-result-list s-search-results sg-row"]')
+        all_div_products = response.xpath('//div[@data-component-type="s-search-result"]')
         
         for i in all_div_products:
-
             item = AmazonScraperItem(
                 title = i.css('.a-size-medium').css('::text').extract(),
                 assessment = i.css('.aok-align-bottom').css('::text').extract(),
@@ -21,7 +20,6 @@ class AmazonSpider(scrapy.Spider):
                 graphic_card = i.css('.puis-padding-right-small:nth-child(3) .a-text-bold').css('::text').extract(),
                 memory_speed = i.css('.puis-padding-right-small:nth-child(4) .a-text-bold').css('::text').extract()
             )
-
             yield item
 
 
