@@ -7,18 +7,13 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
-
 class AmazonScraperPipeline:
     def process_item(self, item, spider):
+        data_list = ['title', 'assessment', 'price', 'RAM_size', 'RAM_type', 'graphic_card', 'memory_speed']
+        
+        # Process empty values
+        for data in data_list:
+            if not item[data]:
+                item[data] = ['-']
 
-        if not item['price']:
-            item['price'] = ['-']
-
-        print("Title: ", item['title'])
-        print("Assessment: ", item['assessment'])
-        print("Price: ", item['price'])
-        print("RAM Size: ", item['RAM_size'])
-        print("RAM Type: ", item['RAM_type'])
-        print("Graphic Card: ", item['graphic_card'])
-        print("Memory Speed: ", item['memory_speed'])
         return item
