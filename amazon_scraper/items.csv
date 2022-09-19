@@ -1,11 +1,11 @@
 RAM_size,RAM_type,assessment,graphic_card,memory_speed,price,title
-1,L2 cache,"4,6 de 5 estrellas","PCI-Express x16, PCI-Express x8",1000 MHz,"58,99","MAXSUN Tarjeta gráfica NVIDIA GEFORCE GT 710 1G GPU, bajo perfil, bajo consumo, VGA, DVI-D, HDMI, HTPC, sistema de refrigeración pasiva silenciosa sin ventilador"
-4 GB,-,"2,4 de 5 estrellas",PCI Express,1000 MHz,"82,86","Tarjeta gráfica para computadora de escritorio, componentes de computadora DDR5 de 128 bits, tarjetas gráficas para juegos, tarjeta gráfica para computadora de bajo consumo, accesorios de red para jue"
-4,DDR3 SDRAM,-,PCI-Express x16,1334 MHz,"99,99","SAPLOS NVIDIA GT 730 4GB DDR3 128-bit, Tarjeta Gráfica, HDMI DVI VGA, Tarjeta Vídeo PC, GPU Graphics Card, PCIex16, Soporte 2K, Fermi, DirectX 11"
-2048,caché L2,"4,5 de 5 estrellas",PCI Express,0 MHz,"77,98","Asus GT730-SL - Tarjeta gráfica de 2 GB GDDR5 (DVI, HDMI, 902 MHz, PCI Express 2.0)"
-2 GB,PC2-4200,"4,4 de 5 estrellas",PCI Express,732 MHz,"85,85","ASUS NVIDIA GeForce GT 730 - Tarjeta Gráfica (PCIe 2.0, 2GB DDR5, Perfil bajo, Diseño de Una Ranura, Auto-Extreme, GPU Tweak II)"
 2 GB,MicroDIMM,"4,5 de 5 estrellas",PCI Express,6008 MHz,"132,26","Gigabyte GV-N1030SL-2GL 2GB GDDR5 - Tarjeta gráfica (NVIDIA, GeForce GT 1030, 4096 x 2160 Pixeles, 1257 MHz, 1506 MHz, 2 GB)"
-1,-,"3,6 de 5 estrellas",PCI Express,1000 MHz,"68,66","Tarjeta gráfica para Juegos HD7670, 1GB 128bit DDR5 650MHz Display Video Card, Ranura para Tarjeta gráfica PCI 3.0, 480 Stream Processor Unit"
+1,DDR5 SDRAM,"4,5 de 5 estrellas",PCI Express,6000 MHz,"113,99","Zotac ZT-P10300A-10L GeForce GT 1030 2GB GDDR5 - Tarjeta gráfica (GeForce GT 1030, 2 GB, GDDR5, 64 bit, 6000 MHz, PCI Express 3.0)"
+2048,caché L2,"4,5 de 5 estrellas",PCI Express,0 MHz,-,"Asus GT730-SL - Tarjeta gráfica de 2 GB GDDR5 (DVI, HDMI, 902 MHz, PCI Express 2.0)"
+1,L2 cache,"4,6 de 5 estrellas","PCI-Express x16, PCI-Express x8",1000 MHz,"58,99","MAXSUN Tarjeta gráfica NVIDIA GEFORCE GT 710 1G GPU, bajo perfil, bajo consumo, VGA, DVI-D, HDMI, HTPC, sistema de refrigeración pasiva silenciosa sin ventilador"
+2 GB,MicroDIMM,"4,4 de 5 estrellas",PCI-Express x16,1600 MHz,"80,00","MSI N730K-2GD3H/LP NVIDIA GeForce GT 730 2GB - Tarjeta gráfica (Pasivo, NVIDIA, GeForce GT 730, GDDR3, PCI Express 2.0, 4096 x 2160 Pixeles)"
+2048 MB,DDR3 SDRAM,"4,4 de 5 estrellas",PCI Express,1600 MHz,-,"Zotac Nvidia GT 710 - Tarjeta gráfica de 2 GB (SATA, 900 MHz)"
+0 GB,DDR5 SDRAM,"4,3 de 5 estrellas",PCI-Express x16,4,-,"ASUS GT710-SL-2GD5 - Tarjeta Gráfica, 16.7 x 6.9 x 1.7 cm"
+2 GB,MicroDIMM,"4,3 de 5 estrellas",PCI-Express x16,5010 MHz,"101,23","Gigabyte GV-N710D5-2GL - Tarjeta gráfica (GeForce GT 710, 2 GB, GDDR5, 64 bit, 4096 x 2160 Pixeles, PCI Express x8 2.0)"
+2048 MB,DDR3 SDRAM,"4,3 de 5 estrellas",PCI Express,7010 MHz,"79,67",Palit NEAT7300HD46H - Tarjeta gráfica (PCI-E GT730 2048 MB Passive 64bit DDR3 DVI/HDMI/VGA)
 2 GB,L2 cache,"4,3 de 5 estrellas",PCI-Express x16,902 MHz,"81,38",MSI N730K-2GD3H/LPV1 NVIDIA GeForce GT 730 2 Go GDDR3
--,-,"3,2 de 5 estrellas",-,-,"75,91","Dpofirs Tarjeta gráfica Profesional para Juegos HD7670 1GB DDR5 128Bit, Tarjeta de Memoria de Video de bajo Ruido, frecuencia Central de 650MHz, con Ranura para Tarjeta gráfica PCI Express 3.0"
-2 GB,-,-,PCI Express,600 MHz,"66,46","Tarjeta gráfica 2G de 64 bits, Tarjeta gráfica DDR3 de bajo Ruido, gráficos de Ranura PCI Express 3.0, Tarjeta gráfica de computadora AMD, Accesorios para computadora, Oficina, Escritorio"
