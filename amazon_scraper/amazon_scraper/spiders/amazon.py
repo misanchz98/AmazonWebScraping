@@ -10,13 +10,12 @@ class AmazonSpider(scrapy.Spider):
 
     def parse(self, response):
         count = 0
-        all_div_products = response.xpath('//div[@data-component-type="s-search-result"]')
+        all_div_items = response.xpath('//div[@data-component-type="s-search-result"]')
         
-        for i in all_div_products:
+        for i in all_div_items:
             
             if count == MAX_ITEMS:
                 break
-            
             else:
                 count += 1
                 item = AmazonScraperItem(
