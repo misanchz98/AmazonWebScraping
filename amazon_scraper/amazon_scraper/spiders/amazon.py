@@ -9,13 +9,13 @@ class AmazonSpider(scrapy.Spider):
     def parse(self, response):
         items = AmazonScraperItem()
 
-        title = item.css('.a-size-medium').css('::text').extract(),
-        assessment = item.css('.aok-align-bottom').css('::text').extract(),
-        price = item.css('.a-price-whole').css('::text').extract(),
-        RAM_size = item.css('.puis-padding-right-small:nth-child(1) .a-text-bold').css('::text').extract(),
-        RAM_type = item.css('.puis-padding-right-small:nth-child(2) .a-text-bold').css('::text').extract(),
-        graphic_card = item.css('.puis-padding-right-small:nth-child(3) .a-text-bold').css('::text').extract(),
-        memory_speed = item.css('.puis-padding-right-small:nth-child(4) .a-text-bold').css('::text').extract()
+        title = response.css('.a-size-medium').css('::text').extract(),
+        assessment = response.css('.aok-align-bottom').css('::text').extract(),
+        price = response.css('.a-price-whole').css('::text').extract(),
+        RAM_size = response.css('.puis-padding-right-small:nth-child(1) .a-text-bold').css('::text').extract(),
+        RAM_type = response.css('.puis-padding-right-small:nth-child(2) .a-text-bold').css('::text').extract(),
+        graphic_card = response.css('.puis-padding-right-small:nth-child(3) .a-text-bold').css('::text').extract(),
+        memory_speed = response.css('.puis-padding-right-small:nth-child(4) .a-text-bold').css('::text').extract()
         
         items['title'] = title
         items['assessment'] = assessment
