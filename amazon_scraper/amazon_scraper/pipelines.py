@@ -10,4 +10,11 @@ from itemadapter import ItemAdapter
 
 class AmazonScraperPipeline:
     def process_item(self, item, spider):
+        print("Title: ", item['title'])
+        print("Assessment: ", item['assessment'])
+        print("Price: ", item['price'])
+        print("RAM Size: ", item['RAM_size'])
+        print("RAM Type: ", item['RAM_type'])
+        print("Graphic Card: ", item['graphic_card'])
+        print("Memory Speed: ", item['memory_speed'])
         return item
