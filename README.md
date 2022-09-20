@@ -16,3 +16,7 @@ Los datos recopilados sobre cada tarjeta gráfica son los que se exponen a conti
 - Velocidad de memoria (*memory_speed*)
 
 ## Instrucciones de uso:
+
+```
+pip install -r requirements.txt
+```
