@@ -19,10 +19,10 @@ Los datos recopilados sobre cada tarjeta gráfica son los que se exponen a conti
 
 ## 1. Instalación requisitos
 
-Antes de llevar a cabo la ejecución del *script* que realizará la tarea descrita en la sección anterior, es necesario instalar las librerias precisas para su correcto funcionamiento:
+Antes de ejecutar el *script* que realizará la tarea descrita en la sección anterior, es necesario instalar las librerias precisas para su correcto funcionamiento:
 
 ```
-cd AmazonWebScraping
+# Desde el directorio AmazonWebScraping
 pip install -r requirements.txt
 ```
 
