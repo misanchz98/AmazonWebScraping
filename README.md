@@ -20,10 +20,20 @@ Los datos recopilados sobre cada tarjeta gráfica son los que se exponen a conti
 ## 1. Instalación requisitos
 
 Antes de ejecutar el *script* que realizará la tarea descrita en la sección anterior, es necesario instalar las librerias precisas para su correcto funcionamiento:
-
 ```
-# Desde el directorio AmazonWebScraping
+cd AmazonWebScraping
 pip install -r requirements.txt
 ```
 
-## 2. Ejecución
+## 2. Ejecución del *script* (Windows)
+
+- Símbolo del Sistema (cmd):
+```
+cd amazon_scraper
+amazon_scraper.bat
+```
+- PowerShell:
+```
+cd amazon_scraper
+./amazon_scraper.bat
+```
