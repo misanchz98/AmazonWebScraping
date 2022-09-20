@@ -38,6 +38,6 @@ cd amazon_scraper
 ./amazon_scraper.bat
 ```
 
-Finalizada la ejecución, aparecerá en el directorio amazon_scraper el fichero **items.csv**. Este incluirá la información recopilada sobre las 10 tarjertas gráficas con mejor valoración y dentro del rango de 50 - 100 EUR.
+Finalizada la ejecución, aparecerá en el directorio *amazon_scraper* el fichero **items.csv**. El fichero incluirá la información recopilada sobre las 10 tarjertas gráficas con mejor valoración y dentro del rango de 50 - 100 EUR.
 
-**NOTA:** Si el fichero items.csv existe antes de ejecutar el script, después de su ejecución este será eliminado y sustituido por un nuevo fichero del mismo nombre.
+**NOTA:** Si el fichero **items.csv** existe antes de ejecutar el *script*, después de su ejecución este será eliminado y sustituido por un nuevo fichero del mismo nombre.
