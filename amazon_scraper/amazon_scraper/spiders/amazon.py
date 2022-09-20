@@ -6,7 +6,7 @@ MAX_ITEMS = 10
 class AmazonSpider(scrapy.Spider):
     name = 'amazon'
     allowed_domains = ['amazon.es']
-    start_urls = ['https://www.amazon.es/s?k=tarjeta+gráfica&rh=n%3A667049031%2Cp_36%3A1323857031&dc&ds=v1%3AKqOzl1lf45G3lPBEZDp2Kz4FX3S128dLorTFHsy8LuY&qid=1663690620&rnid=1323854031&ref=sr_nr_p_36_3']
+    start_urls = ['https://www.amazon.es/s?k=tarjeta+gráfica&i=computers&rh=n%3A667049031%2Cp_36%3A1323857031&s=review-rank&dc&ds=v1%3AkYmNY2E2LnzJBtBJnAnx69lXM8c52NL64KoWbgBCeUY&qid=1663691117&rnid=1323854031&ref=sr_st_review-rank']
     def parse(self, response):
         count = 0
         all_div_items = response.xpath('//div[@data-component-type="s-search-result"]')
