@@ -19,7 +19,7 @@ Los datos recopilados sobre cada tarjeta gráfica son los que se exponen a conti
 
 ## 1. Instalación requisitos
 
-Antes de ejecutar el *script* que realizará la tarea descrita en la sección anterior, es necesario instalar las librerias precisas para su correcto funcionamiento:
+Antes de ejecutar el *script* que realizará la tarea descrita en la sección anterior, es necesario instalar las librerías precisas para su correcto funcionamiento:
 ```
 cd AmazonWebScraping
 pip install -r requirements.txt
@@ -40,4 +40,4 @@ cd amazon_scraper
 
 Finalizada la ejecución, aparecerá en el directorio *amazon_scraper* el fichero **items.csv**. El fichero incluirá la información recopilada sobre las 10 tarjertas gráficas con mejor valoración y dentro del rango de 50 - 100 EUR.
 
-**NOTA:** Si el fichero **items.csv** existe antes de ejecutar el *script*, al llevar a cabo su ejecución, este será eliminado y sustituido por un nuevo fichero del mismo nombre.
+**NOTA:** Si el fichero **items.csv** existe antes de ejecutar el *script*, al llevar a cabo su ejecución, este será eliminado y sustituido por un nuevo fichero del mismo nombre con los nuevos datos.
