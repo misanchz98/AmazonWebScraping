@@ -11,7 +11,7 @@ MAX_ITEMS = 10
 class AmazonSpider(scrapy.Spider):
     name = 'amazon'
     allowed_domains = ['amazon.es']
-    start_urls = ['https://www.amazon.es/']
+    start_urls = ['https://www.amazon.es']
 
     def __init__(self):
         serv = Service(r'driver\\chromedriver.exe')
