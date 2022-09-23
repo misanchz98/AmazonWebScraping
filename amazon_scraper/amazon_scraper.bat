@@ -1,2 +1,2 @@
 DEL items.csv
-scrapy crawl amazon
+scrapy crawl amazon -o items.csv -t csv

@@ -21,10 +21,10 @@ NEWSPIDER_MODULE = 'amazon_scraper.spiders'
 ROBOTSTXT_OBEY = False
 
 # Desired file format
-FEED_FORMAT = "csv"
+#FEED_FORMAT = "csv"
  
 # Name of the file where data extracted is stored
-FEED_URI = "items.csv"
+#FEED_URI = "items.csv"
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
