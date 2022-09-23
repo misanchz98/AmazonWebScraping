@@ -15,7 +15,7 @@ class AmazonSpider(scrapy.Spider):
 
     def __init__(self):
         serv = Service(r'driver\\chromedriver.exe')
-        self.driver = webdriver.Chrome(service=serv, chrome_options=chrome_options)
+        self.driver = webdriver.Chrome(service=serv)
     
     def get_selenium_response(self, url):
         self.driver.get(url)
