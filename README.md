@@ -41,5 +41,5 @@ Finalizada la ejecución, aparecerá en el directorio *amazon_scraper* el ficher
 **NOTA:** Si el fichero **items.csv** existe antes de ejecutar el *script*, al llevar a cabo su ejecución, este será eliminado y sustituido por un nuevo fichero del mismo nombre con los nuevos datos.
 
 ## A tener en cuenta:
-- Este proyecto utiliza el driver **ChromeDriver 105.0.5195.52**, si esta versión no es compatible con su navegador de Google Chrome, puede descargar una versión que sí sea compatible en (https://chromedriver.chromium.org/downloads)[https://chromedriver.chromium.org/downloads]. Una vez terminada su descarga, debe situar el fichero chromedriver.exe dentro del directorio *amazon_scraper/driver*. 
+- Este proyecto utiliza el driver **ChromeDriver 105.0.5195.52**, si esta versión no es compatible con su navegador de Google Chrome, puede descargar una versión que sí sea compatible en [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads). Una vez terminada su descarga, debe situar el fichero chromedriver.exe dentro del directorio *amazon_scraper/driver*. 
 - Si el fichero **items.csv** existe antes de ejecutar el *script* (amazon_scraper.bat), al llevar a cabo su ejecución, este será eliminado y sustituido por un nuevo fichero del mismo nombre con los nuevos datos.
