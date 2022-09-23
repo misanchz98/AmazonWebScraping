@@ -21,7 +21,7 @@ class AmazonSpider(scrapy.Spider):
         self.driver.get(url)
 
         #Step 1: Look for "tarjeta gráfica" in amazon's search box
-        search_box = self.driver.find_element(By.XPATH, '//input[@id="twotabsearchtextbox"]')
+        search_box = self.driver.find_element(By.ID, 'twotabsearchtextbox')
         search_box.send_keys('tarjeta gráfica')
         btn_search = self.driver.find_element(By.ID, 'nav-search-submit-button')
         btn_search.click()
