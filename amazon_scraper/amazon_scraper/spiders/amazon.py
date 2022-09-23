@@ -11,7 +11,7 @@ MAX_ITEMS = 10
 class AmazonSpider(scrapy.Spider):
     name = 'amazon'
     allowed_domains = ['amazon.es']
-    start_urls = ['https://www.amazon.es']
+    start_urls = ['https://www.amazon.es/']
 
     def __init__(self):
         serv = Service(r'driver\\chromedriver.exe')
@@ -19,7 +19,7 @@ class AmazonSpider(scrapy.Spider):
     
     def get_selenium_response(self, url):
         self.driver.get(url)
-        sleep(20)
+        sleep(15)
 
         #Step 1: Look for "tarjeta gráfica" in amazon's search box
         search_box = self.driver.find_element(By.ID, 'twotabsearchtextbox')

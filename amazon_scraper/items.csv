@@ -1,0 +1,11 @@
+RAM_size,RAM_type,assessment,graphic_card,memory_speed,price,title
+2 GB,MicroDIMM,"4,5 de 5 estrellas",PCI Express,6008 MHz,"132,26","Gigabyte GV-N1030SL-2GL 2GB GDDR5 - Tarjeta gráfica (NVIDIA, GeForce GT 1030, 4096 x 2160 Pixeles, 1257 MHz, 1506 MHz, 2 GB)"
+1,L2 cache,"4,6 de 5 estrellas","PCI-Express x16, PCI-Express x8",1000 MHz,"61,99","MAXSUN Tarjeta gráfica NVIDIA GEFORCE GT 710 1G GPU, bajo perfil, bajo consumo, VGA, DVI-D, HDMI, HTPC, sistema de refrigeración pasiva silenciosa sin ventilador"
+2 GB,DDR3 SDRAM,"4,4 de 5 estrellas",PCI Express,1800 MHz,-,"MSI V809-2000R NVIDIA GeForce GT 710 2GB - Tarjeta gráfica (Pasivo, LP/ATX, NVIDIA, GeForce GT 710, GDDR3, PCI Express x8 2.0)"
+2048 MB,DDR3 SDRAM,"4,4 de 5 estrellas",PCI Express,1600 MHz,-,"Zotac Nvidia GT 710 - Tarjeta gráfica de 2 GB (SATA, 900 MHz)"
+2 MB,DDR5 SDRAM,"4,4 de 5 estrellas",PCI Express,5012 MHz,"111,28","ASUS GT710-SL-2GD5 GeForce GT 710 2GB GDDR5 - Tarjeta gráfica (GeForce GT 710, 2 GB, GDDR5, 64 bit, 2560 x 1600 Pixeles, PCI Express x16 2.0)"
+2048,caché L2,"4,4 de 5 estrellas",PCI Express,0 MHz,"76,99","Asus GT730-SL - Tarjeta gráfica de 2 GB GDDR5 (DVI, HDMI, 902 MHz, PCI Express 2.0)"
+2 GB,DDR4 SDRAM,"4,4 de 5 estrellas",PCI-Express x16,2100 MHz,"119,50","Gigabyte GV-N1030D4-2GL GeForce GT 1030 2GB GDDR4 - Tarjeta gráfica (GeForce GT 1030, 2 GB, GDDR4, 64 bit, 4096 x 2160 Pixeles, PCI Express x16 3.0)"
+0 GB,DDR5 SDRAM,"4,3 de 5 estrellas",PCI-Express x16,4,-,"ASUS GT710-SL-2GD5 - Tarjeta Gráfica, 16.7 x 6.9 x 1.7 cm"
+2 GB,DDR3 SDRAM,"4,3 de 5 estrellas",PCI Express,1800 MHz,"81,22",Gigabyte GVN710D32L-00-G - Tarjeta gráfica
+2 GB,MicroDIMM,"4,3 de 5 estrellas",PCI-Express x16,5010 MHz,"101,23","Gigabyte GV-N710D5-2GL - Tarjeta gráfica (GeForce GT 710, 2 GB, GDDR5, 64 bit, 4096 x 2160 Pixeles, PCI Express x8 2.0)"
