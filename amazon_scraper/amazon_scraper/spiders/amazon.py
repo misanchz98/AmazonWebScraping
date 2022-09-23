@@ -19,7 +19,7 @@ class AmazonSpider(scrapy.Spider):
     
     def get_selenium_response(self, url):
         self.driver.get(url)
-        sleep(60)
+        sleep(20)
 
         #Step 1: Look for "tarjeta gráfica" in amazon's search box
         search_box = self.driver.find_element(By.ID, 'twotabsearchtextbox')
