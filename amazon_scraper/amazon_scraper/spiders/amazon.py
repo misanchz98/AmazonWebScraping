@@ -48,6 +48,7 @@ class AmazonSpider(scrapy.Spider):
             sleep(1)
 
             return self.driver.page_source.encode('utf-8')
+        
         except:
             self.driver.quit()
 
