@@ -18,37 +18,39 @@ class AmazonSpider(scrapy.Spider):
         self.driver = webdriver.Chrome(service=serv)
     
     def get_selenium_response(self, url):
-        self.driver.get(url)
+        try:
+            self.driver.get(url)
 
-        #Step 1: Look for "tarjeta gráfica" in amazon's search box
-        search_box = self.driver.find_element(By.ID, 'twotabsearchtextbox')
-        search_box.send_keys('tarjeta gráfica')
-        btn_search = self.driver.find_element(By.ID, 'nav-search-submit-button')
-        btn_search.click()
-        sleep(1)
+            #Step 1: Look for "tarjeta gráfica" in amazon's search box
+            search_box = self.driver.find_element(By.ID, 'twotabsearchtextbox')
+            search_box.send_keys('tarjeta gráfica')
+            btn_search = self.driver.find_element(By.ID, 'nav-search-submit-button')
+            btn_search.click()
+            sleep(1)
 
-        # Accept cookies
-        accept_cookies = self.driver.find_element(By.ID, 'sp-cc-accept')
-        accept_cookies.click()
-        sleep(1)
+            # Accept cookies
+            accept_cookies = self.driver.find_element(By.ID, 'sp-cc-accept')
+            accept_cookies.click()
+            sleep(1)
 
-        #Step 2: Apply "50-100 EUR" filter
-        price_option = self.driver.find_element(By.XPATH, '//li[@aria-label="50 - 100 EUR"]//a[@class="a-link-normal s-navigation-item"]')
-        price_option.click()
-        sleep(1)
+            #Step 2: Apply "50-100 EUR" filter
+            price_option = self.driver.find_element(By.XPATH, '//li[@aria-label="50 - 100 EUR"]//a[@class="a-link-normal s-navigation-item"]')
+            price_option.click()
+            sleep(1)
 
-        #Step 3: Apply "Valoración media de los clientes" filter
-        assessment_options = self.driver.find_element(By.ID, 'a-autoid-0-announce')
-        assessment_options.click()
-        sleep(1)
+            #Step 3: Apply "Valoración media de los clientes" filter
+            assessment_options = self.driver.find_element(By.ID, 'a-autoid-0-announce')
+            assessment_options.click()
+            sleep(1)
 
-        mean_assessment = self.driver.find_element(By.ID, 's-result-sort-select_3')
-        mean_assessment.click()
-        sleep(1)
+            mean_assessment = self.driver.find_element(By.ID, 's-result-sort-select_3')
+            mean_assessment.click()
+            sleep(1)
 
-        #url = self.driver.current_url
-        return self.driver.page_source.encode('utf-8')
-        #driver.quit()
+            return self.driver.page_source.encode('utf-8')
+        except:
+            self.driver.quit()
+
 
     def parse(self, response):
         count = 0
