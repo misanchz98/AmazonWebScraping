@@ -12,47 +12,59 @@ class AmazonSpider(scrapy.Spider):
     allowed_domains = ['amazon.es']
     start_urls = ['https://www.amazon.es/']
 
-    def start_request(self):
+
+    def start_requests(self):
+        url = 'https://www.amazon.es/'
+        yield scrapy.Request(url=url, callback=self.parse)
+
+
+    def __init__(self):
         serv = Service(r'C:\\Users\\INTEL I5\\Desktop\\AmazonWebScraping\\amazon_scraper\\driver\\chromedriver.exe')
-        driver = webdriver.Chrome(service=serv)
+        self.driver = webdriver.Chrome(service=serv)
+    
+    @staticmethod
+    def get_selenium_response(driver, url):
+        driver.get(url)
 
-        driver.get('https://www.amazon.es/')
+        try:
+            #Step 1: Look for "tarjeta gráfica" in amazon's search box
+            search_box = driver.find_element(By.ID, 'twotabsearchtextbox')
+            search_box.send_keys('tarjeta gráfica')
+            btn_search = driver.find_element(By.ID, 'nav-search-submit-button')
+            btn_search.click()
+            sleep(2)
 
-        #Step 1: Look for "tarjeta gráfica" in amazon's search box
-        search_box = driver.find_element(By.ID, 'twotabsearchtextbox')
-        search_box.send_keys('tarjeta gráfica')
-        btn_search = driver.find_element(By.ID, 'nav-search-submit-button')
-        btn_search.click()
-        sleep(2)
+            # Accept cookies
+            accept_cookies = driver.find_element(By.ID, 'sp-cc-accept')
+            accept_cookies.click()
+            sleep(2)
 
-        # Accept cookies
-        accept_cookies = driver.find_element(By.ID, 'sp-cc-accept')
-        accept_cookies.click()
-        sleep(2)
+            #Step 2: Apply "50-100 EUR" filter
+            price_option = driver.find_element(By.XPATH, '//li[@aria-label="50 - 100 EUR"]//a[@class="a-link-normal s-navigation-item"]')
+            price_option.click()
+            sleep(2)
 
-        #Step 2: Apply "50-100 EUR" filter
-        price_option = driver.find_element(By.XPATH, '//li[@aria-label="50 - 100 EUR"]//a[@class="a-link-normal s-navigation-item"]')
-        price_option.click()
-        sleep(2)
+            #Step 3: Apply "Valoración media de los clientes" filter
+            assessment_options = driver.find_element(By.ID, 'a-autoid-0-announce')
+            assessment_options.click()
+            sleep(1)
 
-        #Step 3: Apply "Valoración media de los clientes" filter
-        assessment_options = driver.find_element(By.ID, 'a-autoid-0-announce')
-        assessment_options.click()
-        sleep(1)
+            mean_assessment = driver.find_element(By.ID, 's-result-sort-select_3')
+            mean_assessment.click()
+            sleep(2)
 
-        mean_assessment = driver.find_element(By.ID, 's-result-sort-select_3')
-        mean_assessment.click()
-        sleep(2)
-
-        url = driver.current_url
-        print(url)
-        yield scrapy.Request(url,callback=self.parse)
-        driver.quit()
-
-    def parse(self, response, **kwargs):
-        count = 0
-        all_div_items = response.xpath('//div[@data-component-type="s-search-result"]')
+            #url = self.driver.current_url
+            yield driver.page_source.encode('utf-8')
         
+        except:
+            driver.quit()
+
+    def parse(self, response):
+        count = 0
+
+        response = scrapy.Selector(text=self.get_selenium_response(self.driver, response.url))
+        all_div_items = response.xpath('//div[@data-component-type="s-search-result"]')
+
         for i in all_div_items:
             
             if count == MAX_ITEMS:
