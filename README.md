@@ -29,12 +29,10 @@ pip install -r requirements.txt
 
 - **Símbolo del Sistema (cmd):**
 ```
-cd amazon_scraper
 amazon_scraper.bat
 ```
 - **PowerShell:**
 ```
-cd amazon_scraper
 ./amazon_scraper.bat
 ```
 
