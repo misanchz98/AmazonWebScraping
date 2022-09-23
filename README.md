@@ -36,7 +36,7 @@ amazon_scraper.bat
 ./amazon_scraper.bat
 ```
 
-Finalizada la ejecución, aparecerá en el directorio *amazon_scraper* el fichero **items.csv**. El fichero incluirá la información recopilada sobre las 10 tarjertas gráficas con mejor valoración y dentro del rango de 50 - 100 EUR.
+Finalizada la ejecución, aparecerá en el directorio *amazon_scraper* el fichero **items.csv**. El fichero incluirá la información recopilada sobre las 10 tarjetas gráficas con mejor valoración y dentro del rango de 50 - 100 EUR.
 
 ## A tener en cuenta:
 - Este proyecto utiliza el *driver* **ChromeDriver 105.0.5195.52**, si esta versión no es compatible con su navegador de Google Chrome, puede descargar una versión que sí sea compatible en [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads). Una vez terminada su descarga, deberá situarse el fichero **chromedriver.exe** dentro del directorio *amazon_scraper/driver*. 
